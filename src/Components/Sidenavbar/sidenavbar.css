@@ -1,48 +1,91 @@
-.home-sidenavbar{
-    display: flex;
-    flex-direction: column;
-    flex:0.16 1;
-    box-sizing: border-box;
-    height:92vh;
-    overflow-y:auto;
-    position:fixed;
-    top: 55px;
-    background-color:black;
-    left :0px;
-    width:275px;
-    padding:14px;
-    gap: 10px;
-    color:white;
+.homeSidenavbar-hide{
+    display:none;
 }
-.home__sideNavbarTop{
-    display:flex;
-    flex-direction:column;
-    border-bottom:1px solid rgb(86,85 ,85);
-    padding-bottom:10px;
 
-   
+
+
+
+
+.home-sidenavbar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.16 1;
+  box-sizing: border-box;
+  height: 92vh;
+  overflow-y: auto;
+  position: fixed;
+  top: 55px;
+  background-color: black;
+  left: 0;
+  width: 275px;
+  padding: 14px;
+  gap: 10px;
+  color: white;
+  justify-content: flex-start;
 }
-.home__sideNavbarTopOption{
-    display:flex;
-    align-items:center;
-    gap: 20px;
-    color:white;
-    font-size: 14px;
-    font-weight: 500;   
-    padding:9px 10px;
-    border-radius: 20px;
-    cursor: pointer;    
-    &:hover{
-        background-color: rgb(35,35,35);
-    }
+.home-sidenavbar::-webkit-scrollbar {
+  width: 12px;
+  
 }
-.home__sideNavbarTopOption{
-    font-size: 14px;
-    font-weight: 450;
+.home__sideNavbarTop {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(86, 85, 85);
+  padding-bottom: 10px;
 }
-.home__sideNavbarMiddle{
-    display:flex;
-    flex-direction:column;
-    border-bottom:1px solid rgb(86,85 ,85);
-    padding-bottom:10px ,0;
+.home__sideNavbarTopOption {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(35, 35, 35);
+  }
+}
+.home__sideNavbarTopOption {
+  font-size: 14px;
+  font-weight: 450;
+}
+.home__sideNavbarMiddle {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(86, 85, 85);
+  padding-bottom: 10px;
+}
+
+.home__sideNavbarBottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.home__sideNavbarBottomOption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.home__sideNavbarBottomOption:hover,
+.home__sideNavbarTopOption:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.home__sideNavbarTopOptionTitle {
+  white-space: nowrap;
+}
+
+.home_sidenavbar_ImgLogo {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
 }

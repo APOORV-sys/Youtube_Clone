@@ -3,10 +3,10 @@ import Sidenavbar from "../../Components/Sidenavbar/sidenavbar";
 import HomePage from "../../Components/HomePage/homePage";
 import "./Home.css";
 
-const Home = () => {
+const Home = ({ sidenavbar }) => {
   return (
     <div className="home">
-      <Sidenavbar />
+      <Sidenavbar isOpen={sidenavbar} />
       <HomePage />
     </div>
   );

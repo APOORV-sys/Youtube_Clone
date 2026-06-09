@@ -1,24 +1,28 @@
-import React,{useState} from 'react'
-import './navbar.css';
+import React, { useState } from "react";
+import "./navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import SearchIcon from "@mui/icons-material/Search";
 import MicOutlinedIcon from "@mui/icons-material/MicOutlined";
 import AddIcon from "@mui/icons-material/Add";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
-const Navbar = () => {
-  const [userPic, setUserPic] = useState(
+const Navbar = ({ setSidenavbar, sidenavbar }) => {
+  const [userPic] = useState(
     "https://wallpapercave.com/avt/UnknownUser.png?v=4",
   );
-  const[navbarModel,setNavbarModel] = useState(false);
-  const handleClickModel = () => {setNavbarModel(prev => !prev)}; // Toggle the model visibility
+  const [navbarModel, setNavbarModel] = useState(false);
+  const handleClickModel = () => {
+    setNavbarModel((prev) => !prev);
+  }; // Toggle the model visibility
+  const sidenavbarFunc = () => {
+    setSidenavbar(!sidenavbar);
+  };
   return (
     <div className="navbar">
       <div className="navbar-left">
-        <div className="navhamburger">
-          <MenuIcon sx={{ fontSize: "44px" }} />  
+        <div className="navhamburger" onClick={sidenavbarFunc}>
+          <MenuIcon sx={{ fontSize: "44px" }} />
         </div>
         <div className="navlogo">
           <YouTubeIcon
@@ -60,18 +64,23 @@ const Navbar = () => {
           sx={{ color: "white", fontsize: "30px", cursor: "pointer" }}
           className="Bell"
         />
-        <img onClick={handleClickModel} src={userPic} className="pf" alt="logo" />
-      
-      {navbarModel && (
-        <div className="navbar-model">
-          <div className="navbar-model-option">Profile</div>
-          <div className="navbar-model-option">Login</div>
-          <div className="navbar-model-option">Logout</div>
-        </div>
-      )}
+        <img
+          onClick={handleClickModel}
+          src={userPic}
+          className="pf"
+          alt="logo"
+        />
+
+        {navbarModel && (
+          <div className="navbar-model">
+            <div className="navbar-model-option">Profile</div>
+            <div className="navbar-model-option">Login</div>
+            <div className="navbar-model-option">Logout</div>
+          </div>
+        )}
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
