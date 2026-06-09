@@ -1,0 +1,169 @@
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0px 16px;
+    position:fixed;
+    background-color:black;
+    top:0;
+    width:100%;
+    height:56px;
+    box-sizing:border-box;
+}
+.navbar-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-shrink:0;
+}
+
+.navhamburger {
+    font-size: 18px;
+    color: white;
+}
+.navlogo{
+    display: flex;
+   
+    justify-content:center;
+    align-items: center;    
+    cursor:pointer;
+    color:white;
+
+}
+.navlogotext{
+    font-size: 28px;
+    font-weight: 500;
+    margin-left: 5px;
+    word-spacing: 0px;
+    font-weight: 600;
+}
+.searchicon{
+    color:white;
+    font-size: 30px;
+}
+
+
+
+.navbar-middle{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    padding:0 40px;
+    
+}
+
+.navsearch{
+    width:80%;
+    max-width:700px;
+    display:flex;
+    
+}
+
+.navbarsearchboxinput{
+    width:80%;
+    height:40px;
+    padding-left:20px;
+    font-size:16px;
+    background-color:#121212;
+    color:white;
+    border:1px solid rgb(58,57,57);
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+
+    &:focus{
+         outline:none;  /*isse search box ka boder chamkega nhi */
+    }
+    &::placeholder{
+        font-size:16px;
+
+    }
+}
+.SI{
+    background-color:rgb(42,42,42);
+    height:40px;
+    width:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+    cursor:pointer;
+    border:1px solid rgb(42,42,42);
+    padding:6px;
+
+
+}
+.navmicicon{
+    background-color:rgb(42,42,42);
+    height:40px;
+    width:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    margin-left:10px;
+    cursor:pointer;
+    padding:2px;
+}
+
+/* ----------------------------------nav right------ */
+.navbar-right{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    padding:7px;
+    
+}
+/* .add{
+   background-color:rgb(42,42,42);
+    height:10px;
+    width:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    margin-left:10px;
+    cursor:pointer;
+    padding:6px;
+
+}
+.Bell{
+    background-color:rgb(42,42,42);
+    height:40px;
+    width:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    margin-left:10px;
+    cursor:pointer;
+    padding:10px; */
+
+/* } */
+.pf{
+   width:30px;
+   border-radius:50%;
+   cursor:pointer;
+   }
+.navbar-model{
+    position:absolute;
+    top:35px;
+    width:100%;
+    z-index:20;
+    color:white;    
+    
+}
+.navbar-model-option{
+
+    background-color: rgb(85,85,85);
+    padding:10px;
+    cursor:pointer;
+   
+    &:hover{
+        background-color: rgb(34,33,33);
+    }
+}
+
+
