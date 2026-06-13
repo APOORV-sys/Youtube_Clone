@@ -1,0 +1,114 @@
+.fullHomePage {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  flex: 1;
+  margin-left: 0;
+  min-height: 100vh;
+  padding-top: 56px;
+  background-color: #111;
+  color: white;
+}
+
+.fullHomePage .homepage_options {
+  left: 0;
+  width: 100%;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  flex: 1;
+  margin-left: 262px;
+  min-height: 100vh;
+  padding-top: 56px;
+  background-color: #111;
+  color: white;
+  margin-right: 100%;
+}
+
+.homepage_options {
+  display: flex;
+  position: fixed;
+  top: 56px;
+  left: 275px;
+  right: 0;
+  z-index: 1;
+  width: calc(100% - 275px);
+  box-sizing: border-box;
+  gap: 10px;
+  padding: 12px;
+  flex-shrink: 0;
+  overflow-x: auto;
+  background-color: #0f0f0f;
+  border-bottom: 1px solid rgb(58, 57, 57);
+}
+.homepage_options::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* .homepage_option {
+  min-width: 110px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.homepage_option:hover {
+  background-color: rgb(52, 51, 51);
+}
+
+.homepage_content {
+  margin-top: 86px;
+  padding: 24px;
+  box-sizing: border-box;
+  min-height: calc(100vh - 86px);
+} */
+.homepage_option {
+  flex: 0 0 auto;
+  height: 30px;
+  padding: 1px 10px;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.home_mainPage {
+  display: grid;
+  box-sizing: border-box;
+  gap: 10px;
+  grid-template-columns: 384px, 384px, 384px;
+  padding: 90px 0 20px 0;
+}
+.youtube_video {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  height: 316px;
+}
+
+.youtube_thubnailBox {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #222;
+}
+
+.youtube_thumbnailPic {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}

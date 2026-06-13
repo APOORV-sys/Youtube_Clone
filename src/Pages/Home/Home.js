@@ -7,7 +7,7 @@ const Home = ({ sidenavbar }) => {
   return (
     <div className="home">
       <Sidenavbar isOpen={sidenavbar} />
-      <HomePage />
+      <HomePage isOpen={sidenavbar} />
     </div>
   );
 };
